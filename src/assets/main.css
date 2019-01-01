@@ -1,0 +1,183 @@
+.button{
+    border: transparent;
+    background: rgba(0, 0, 0, 0.05);
+    color: #F78536;
+    padding: 10px 55px;
+    font-size: 13px;
+    transition: background 0.2s, border-color 0.2s;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    
+}
+.resultat{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+.ticket-card {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    background: white;
+    border-radius: 4px;
+    border-style: dotted dashed solid double;
+    border: black;
+  }
+  .ticket-card:hover .cover img, .ticket-card.active .cover img {
+    -moz-transform: translate(0, -50px);
+    -o-transform: translate(0, -50px);
+    -ms-transform: translate(0, -50px);
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px);
+    box-shadow: 0 10px 20px -4px rgba(22, 22, 22, 0.5);
+  }
+  .ticket-card .cover {
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    margin: 15px;
+  }
+  .ticket-card .cover img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-top: -30px;
+    box-shadow: 0 10px 16px -6px rgba(22, 22, 22, 0.5);
+    border-radius: 4px;
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+    -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+    -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+    -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+    transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 300ms ease, opacity 300ms ease;
+  }
+  .ticket-card .cover .info {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 0 15px;
+    color: #777777;
+  }
+  .ticket-card .cover .info .going,
+  .ticket-card .cover .info .tickets-left {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f3f3f3;
+    width: 50%;
+  }
+  .ticket-card .cover .info .going {
+    float: left;
+  }
+  .ticket-card .cover .info .tickets-left {
+    float: right;
+    text-align: right;
+  }
+  .ticket-card .cover .info .fa {
+    color: #CCCCCC;
+    margin-right: 5px;
+  }
+  .ticket-card .body {
+    padding: 5px 30px;
+  }
+  .ticket-card .body .info {
+    color: #777777;
+  }
+  .ticket-card .body .location,
+  .ticket-card .body .date {
+    padding-top: 10px;
+    width: 50%;
+  }
+  .ticket-card .body .location {
+    float: left;
+  }
+  .ticket-card .body .date {
+    float: right;
+    text-align: right;
+  }
+  .ticket-card .body .fa {
+    color: #CCCCCC;
+    margin-right: 5px;
+  }
+ /* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+.myForm {
+
+ width:442px;
+ margin: auto;
+ border-radius:0.4em;
+
+ overflow:hidden;
+ position:relative;
+}
+.boxTo{
+  border-radius: 0px 13px 13px 0px;
+  border: 1px solid #aaa1a1bb;
+  border-left-style: none;
+  border-right-style: dotted;
+}
+.boxFrom{
+  border-radius: 7px 0px 0px 7px;
+  border: 1px solid #aaa1a1bb;
+  border-right-style: none;
+}
+.boxPrice{
+  border-radius: 13px 0px 0px 13px;
+  border: 1px solid #aaa1a1bb;
+  text-align: center;
+    padding: 33px;
+    border-left-style: dotted;
+}

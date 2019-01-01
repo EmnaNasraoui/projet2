@@ -1,0 +1,37 @@
+<!--<div>
+    <input type="text" placeholder="Departure" [(ngModel)]="depart">
+    <input type="text" placeholder="Arrival" [(ngModel)]="arrive">
+    <input type="text" placeholder="TravelClass" [(ngModel)]="travelClass">
+    <input type="number" placeholder="adult" [(ngModel)]="adult">
+    <input type="date"  [(ngModel)]="dateAller">
+    <input type="date" [(ngModel)]="dateRetour">
+    <button (click)="getCity()">Okay</button>
+
+</div>
+  <div class="col-md-12">
+      <div *ngFor="let index of results">
+          <p> type : {{index.type}}</p>
+          <p> ID : {{index.id}}</p>
+          <p>{{adult}}</p>
+          <div *ngFor="let offer of index.offerItems ">
+               <div *ngFor="let service of offer.services ">
+                     <div *ngFor="let segment of service.segments ">
+                         <p> From : {{segment.flightSegment.departure.iataCode}}</p>
+                         <p> Terminal : {{segment.flightSegment.departure.terminal}}</p>
+                         <p> at : {{segment.flightSegment.departure.at}}</p>
+                         <p> To : {{segment.flightSegment.arrival.iataCode}}</p>
+                         <p> Terminal : {{segment.flightSegment.arrival.terminal}}</p>
+                         <p> at : {{segment.flightSegment.arrival.at}}</p>
+                         <p> carrierCode : {{segment.flightSegment.carrierCode}}</p>
+                         <p> duration : {{segment.flightSegment.duration}}</p>
+                         <p> travelClass : {{segment.pricingDetailPerAdult.travelClass}}</p> 
+                       </div>
+               </div>
+               <p> Total price : {{offer.price.total}}</p>
+               <p> PricePerAdult : {{offer.pricePerAdult.total}}</p>
+         </div>
+         </div>
+         
+  </div>
+  -->
+ 
